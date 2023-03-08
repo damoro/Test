@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Drippy Radio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+           $(document).ready(function(){
+                $('.menu h4').click(function(){
+                    $("nav ul").toggleClass("active")
+            })
+            })
+        </script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+  <body>
+    <section>
+    <div class="container">  
+      <h2 id="text" data-aos="fade-right">Welcome to<br>Drippy Radio</h2>
+      <img src="bg.png" class="bg1">
+      <img src="girl.png" class="girl">
+    </div>
+    <div class="toolbar">
+    <a href="#" class="btn btn_live">Live<span class="live-icon"></span></a>
+    </div>
+      </section>
+      <script>
+        AOS.init();
+      </script>
+       <div class="audio-wrapper">
+        <div class="details">
+          <div class="track-name">Track Name</div>
+          <div class="track-artist">Track Artist</div>
+        </div>
+          <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()">
+              <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-3x"></i>
+            </div>
+            <div class="next-track" onclick="nextTrack()">
+              <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+          </div>
+          <div class="slider_container">
+            <div class="current-time"></div>
+            <input class type="range" min="1" max="100"
+              value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration"><br>00:00</div>
+          </div>
+          </div>
+      <div class="responsive-bar">
+        <div class="menu"></div>
+    </div>
+<nav>
+        <div class="logo"><a href="index.html">
+        <img src="logo.png" alt="logo"/>
+        </div>
+     <ul>
+        <li><a href="#">Home</a></li>
+         <li><a href="#about-us">About us</a></li>
+         <li><a href="#services">Services</a></li>
+         <li><a href="#cu">Contact Us</a></li>
+        </ul>
+</nav>
+      <ul class="wrapper" data-aos="fade-left"></div>
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </li>
+        <br>
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <span><i class="fab fa-twitter"></i></span>
+        </li>
+        <br>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <span><i class="fab fa-instagram"></i></span>
+        </li>
+        <br>
+        <li class="icon youtube">
+          <span class="tooltip">Youtube</span>
+          <span><i class="fab fa-youtube"></i></span>
+        </li>
+      </ul>
+      <div class="content">
+        <div id="about-us" class="about-text-title">About Us</div>
+        <div class="about-text">
+          <div class="shape-blob"></div>
+          <div class="shape-blob one"></div>
+          <div class="shape-blob two"></div>
+          <div class="shape-blob three"></div>
+        <div id="text2" class="txt2">
+          Welcome to our radio station!
+          We are a community-driven station that plays a variety of music, from top 40 hits to indie favorites. 
+          Our mission is to bring people together through the power of music and to create a sense of community and belonging.
+          We have a team of dedicated DJs who handpick the songs you hear on air, and are committed to fostering local talent by regularly featuring music from up-and-coming artists in our area. We also produce and air our own original content, including daily news and weather updates, as well as local events and community-focused programs.
+          Tune in to our live stream on our website, or download our mobile app to listen on the go. Want to request a song or talk to our DJs? Call or text us during our live shows, or send us a message on social media. Don't want to miss a beat? Follow us on Instagram, Twitter, and Facebook to stay up-to-date on all our events, giveaways and more. 
+          We are a commercial-free station, our revenue comes from our sponsors, who support our mission and vision. We believe that our sponsors share the same values as ours, supporting local communities and promoting diversity.         
+          We also have a wide range of podcasts, covering different topics such as music, politics, and entertainment. Our podcasts are produced by our team of experts and are available on our website and all major podcast platforms. We are committed to providing a diverse range of music and programming, catering to all ages and backgrounds.
+          We understand that music is a powerful tool that can bring people together and create a sense of unity and belonging. We are proud to be a part of the community and to provide a platform for local talent and voices. So, whether you're at home, in the car, or at the gym, make us your go-to station for all your music needs. Thank you for listening, and we hope to be your soundtrack to your day!</div>
+        <img class="section1-image" src="tower.jpg">
+        <div class="wave1">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>
+      <div id="services" class="serv-text">Services</div>
+        <div class="services" >
+          <img class="build" src="radio.jpg">
+
+          <div class="container1">
+            <div class="row">
+              <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h2>Live broadcasting</h2>
+                <p>
+                 Our radio station can offer live broadcasting of news, music, talk shows, and other programs to keep listeners engaged and informed.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h2>Advertising and sponsored content</h2>
+                <p>
+                  Our radio station can offer advertising and sponsored content opportunities to businesses and organizations looking to reach a specific audience.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fab fa-sketch"></i>
+                <h2>Personality appearances and events</h2>
+                <p>
+                  Events featuring their on-air personalities, including meet and greets, live broadcasts, and public speaking engagements.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-database"></i>
+                <h2>News broadcasts</h2>
+                <p>
+                  Our radio station can offer local, national, and international news updates, including breaking news and in-depth analysis.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h2>Mobile streaming</h2>
+                <p>
+                  Mobile streaming services that provides additional listening options for listeners.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-file-invoice"></i>
+                <h2>Talk shows and interviews</h2>
+                <p>
+                  Our radio station provided this platform and an upcoming app for discussions on a variety of topics, including current events, politics, and entertainment.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-money-check-alt"></i>
+                <h2>Giveaways</h2>
+                <p>
+                  We engage listeners by offering on-air contests and giveaways, such as trivia questions and prize drawings.
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-network-wired"></i>
+                <h2>Network affiliations</h2>
+                <p>
+                  We affiliate with larger radio networks to gain access to additional resources and programming options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </body>
+        <div class="wave2">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <img class="icon" src="Icon.png"></img>
+        <div class="wave3">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+      </div>
+        </div>
+        <h1 id="text-outro">Tune in and turn it up, no doubt!</h1>
+      </div> 
+        <iframe class="map" src="https://my.atlistmaps.com/map/dbd6a5ef-da6e-4f00-b979-610cf1d095bd?share=true" allow="geolocation" width="100%" height="600px" frameborder="0" scrolling="no" allowfullscreen></iframe> 
+        <h1 id="cu" class="contact-us">Contact Us</h1>
+        <h2 id="cus" class="contact-us-sec">Tune in and reach out! If you have any questions or comments, fill out the form below and let us know. We're always happy to hear from our listeners.</h2>
+        <div class="container2">
+          <div class="row input-container">
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <input type="text" required />
+                  <label>Name</label> 
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                  <input type="text" required />
+                  <label>Email</label> 
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                  <input type="text" required />
+                  <label>Phone Number</label> 
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <textarea required></textarea>
+                  <label>Message</label>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="btn-lrg submit-btn">Send Message</div>
+              </div>
+          </div>
+        </div>   
+        <footer class="footer">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/?lang=en">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about-us">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="team.html">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#cu">Contact</a></li>
+      
+          </ul>
+          <p>&copy;2023 Drippy Radio | All Rights Reserved</p>
+        </footer>
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+  <script src="script.js"></script>    
+      <svg class="arrows"><a href="#about-us">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+  </body>
+</html>
